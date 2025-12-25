@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "img": "https://i.ibb.co/L5vhJxH/pdt1-600x.webp",
+        "price": 19.99,
+        "rating": 4.5,
+        "dsc": "Yoga Comfort Blue Mat.A yoga mat is a piece of equipment used for practicing yoga and other exercises",
+        "title":"Yoga Comfort Blue Mat"
+    },
+    {
+        "id": 2,
+        "img": "https://i.ibb.co/4sPMQHY/pdt14-600x.webp",
+        "price": 24.99,
+        "rating": 4.2,
+        "dsc": "Denim loafers refer to a type of footwear that combines the style and design of loafers with denim fabric.",
+        "title":"Denim Loafers"
+    },
+    {
+        "id": 3,
+        "img": "https://i.ibb.co/cw47NYt/pdt25-600x.webp",
+        "price": 14.99,
+        "rating": 4.0,
+        "dsc": "Strip tights can have a variety of striped patterns, including thin pinstripes, wide stripes, diagonal stripes",
+        "title":"Strip Tights"
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co/bB0yH8H/pdt26-600x.webp",
+        "price": 29.99,
+        "rating": 4.8,
+        "dsc": "If you have a specific yoga exercise or pose in mind and need information about it, please provide more details.",
+        "title":"Yoga Rush-up"
+    },
+    {
+        "id": 5,
+        "img": "https://i.ibb.co/GFh6zsm/pdt16-600x.webp",
+        "price": 29.99,
+        "rating": 4.8,
+        "dsc": "Casual loafers are a type of footwear that combines the comfort and slip-on style of loafers with a more relaxed.",
+        "title":"Casual Loafers"
+    },
+    {
+        "id": 6,
+        "img": "https://i.ibb.co/54HkgV5/pdt21-1c010a9b-ddc8-4e46-9a28-ea70540b94d9-600x.webp",
+        "price": 29.99,
+        "rating": 4.8,
+        "dsc": "Slim tank tops are available in a wide range of colors, from classic neutrals to vibrant shades. They may also feature .",
+        "title":"Slim Tank Top"
+    },
+    {
+        "id": 7,
+        "img": "https://i.ibb.co/JBMjvtq/pdt17-daf65ae0-6b3c-46e2-b30e-4a429b343aa6-600x.webp",
+        "price": 29.99,
+        "rating": 4.8,
+        "dsc": "Blue sneakers can be found in various shades of blue, ranging from light and pastel blues to deep navy or royal blue. ",
+        "title":"Blue Sneakers"
+    },
+    {
+        "id": 8,
+        "img": "https://i.ibb.co/vJ9BFqM/pdt5-f24adc28-7f4c-4281-8010-2c727b0b90ec-600x.webp",
+        "price": 29.99,
+        "rating": 4.8,
+        "dsc": "Yoga mats can be made from various materials, including PVC, TPE, rubber, cork, or other eco-friendly materials",
+        "title":"Yoga comfort green mat"
+    }
+   
+   
+]
