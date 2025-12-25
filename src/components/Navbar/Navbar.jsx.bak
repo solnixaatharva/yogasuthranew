@@ -23,12 +23,13 @@ const Navbar = () => {
 
 
 
+
     const linkClass = ({ isActive, isPending }) =>
         isPending
             ? "pending"
             : isActive
-            ? "px-3 py-2 rounded-full font-bold text-neutral-900 bg-white/95 shadow-md border border-neutral-200 ring-1 ring-neutral-200"
-            : "px-3 py-2 text-neutral-800";
+            ? "px-3 py-2 rounded-full font-bold text-neutral-900 bg-white/95 shadow-md border border-neutral-200 ring-1 ring-neutral-200 transform scale-100 hover:scale-[1.02] transition-all"
+            : "px-3 py-2 text-neutral-800 hover:text-neutral-900 transition-colors";
 
     const home = <NavLink to="/" className={linkClass}>HOME</NavLink>;
     const shop = <NavLink to="/shop" className={linkClass}>SHOP</NavLink>;
@@ -43,15 +44,15 @@ const Navbar = () => {
 
 
     return (
-        <div className="relative bg-[#efe6d0] shadow-none">
-
+        <div className="relative bg-[linear-gradient(to_bottom,rgba(191,174,111,1)_0%,rgba(214,199,159,0.98)_6%,rgba(233,220,195,0.75)_28%,rgba(239,230,208,0.95)_60%,rgba(247,239,224,1)_100%)] shadow-none">
+            <div className="absolute inset-x-0 top-0 h-8 bg-[linear-gradient(to_bottom,rgba(191,165,110,0.32),transparent)]"></div>
             <div className="max-w-screen-xl	 mx-auto md:px-2">
                 <div className="px-4 md:px-4 lg:px-4   bg-none z-30 relative ">
                     <div className="navbar flex justify-between items-center ">
                         <div className="flex items-center py-2 relative">
-
-                            <div className="bg-[#efe6d0] px-2 py-1 rounded-md z-40">
-                                <img className="w-[200px] object-contain bg-transparent" src={'public/images/logoyogasuthra.png'} alt="YogaSuthra logo" />
+                            <div className="absolute -left-8 -top-6 w-[240px] h-[106px] rounded-md pointer-events-none z-30" style={{background: 'radial-gradient(circle at 30% 45%, rgba(191,165,100,0.95) 0%, rgba(231,216,186,0.80) 35%, rgba(247,239,224,0.0) 65%)'}}></div>
+                            <div className="bg-white/55 px-2 py-1 rounded-sm border border-neutral-200/20 shadow-none z-40 backdrop-blur-sm">
+                                <img className="w-[148px] object-contain" src={'https://i.ibb.co/Mk1f8sQf/logoyogasuthra.png'} alt="YogaSuthra logo" />
                             </div>
                         </div>
                         <div className="">
@@ -59,7 +60,7 @@ const Navbar = () => {
                                 <label tabIndex={1} className="btn btn-ghost lg:hidden">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-[50px] text-neutral-800 w-[50px]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                                 </label>
-                                <ul tabIndex={0} className=" menus menu-sm dropdown-content text-neutral-800 py-4 z-[10] rounded-box -left-20 shadow-md" style={{background: '#efe6d0'}}>
+                                <ul tabIndex={0} className=" menus menu-sm dropdown-content text-neutral-800 py-4 z-[10] rounded-box -left-20 shadow-md" style={{background: 'linear-gradient(to bottom,#bfae6f 0%,#d6c79f 8%,#e9dcc3 28%,#efe6d0 60%,#f7efe0 100%)'}}>
                                     <li className="text-4xl px-3">{home}</li>
                                     <li className="text-4xl px-3">{shop}</li>
                                     <li className="text-4xl px-3">{blog}</li>

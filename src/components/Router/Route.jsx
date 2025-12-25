@@ -5,6 +5,7 @@ import ContactUs from "../../Pages/ContactUs/ContactUs";
 import Faq from "../../Pages/FAQ/Faq";
 import Home from "../../Pages/Home";
 import Shop from "../../Pages/Shop/Shop";
+import Yogasuthra from "../../Pages/Yogasuthra/Yogasuthra";
 import Login from "../Login/Login";
 import Register from "../Login/Register/Register";
 import Root from "../Root/Root";
@@ -33,6 +34,10 @@ const myCreateRoute = createBrowserRouter([
             {
                 path:'/aboutus',
                 element:<AboutUs></AboutUs>,
+            },
+            {
+                path:'/yogasuthra',
+                element:<Yogasuthra></Yogasuthra>,
             },
             {
                 path:'/contactus',

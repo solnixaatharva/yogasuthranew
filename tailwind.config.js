@@ -13,6 +13,16 @@ export default {
           mid: '#FF6BA9',
           light: '#FFD7E4'
         },
+        sun: {
+          DEFAULT: '#FFD23F',
+          mid: '#FFCF3F',
+          dark: '#FFB300'
+        },
+        cream: {
+          DEFAULT: '#EFE6D0',
+          mid: '#E9DEC7',
+          dark: '#D8C9A4'
+        },
         accent: '#ED0B5A',
         coral: '#FFBFA3',
         neutral: {
