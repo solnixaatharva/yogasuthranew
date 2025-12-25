@@ -8,11 +8,11 @@ const Faq = () => {
     },[])
     return (
         <div className="max-w-7xl mx-auto">
-            <h1 data-aos="flip-up" className="text-4xl font-extrabold text-center my-8 text-[#DC2C5C]">FAQ</h1>
+            <h1 data-aos="flip-up" className="text-4xl font-extrabold text-center my-8 text-brand">FAQ</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div data-aos="fade-right">
                     <div className="join join-vertical w-full px-4 py-8">
-                        <div className="collapse collapse-arrow join-item border border-base-300 text-white bg-[#DC2C5C]">
+                        <div className="collapse collapse-arrow join-item border border-base-300 text-white bg-brand">
                             <input type="radio" name="my-accordion-4" checked="checked" />
                             <div className="collapse-title text-xl font-medium">
                                 How will my order be delivered to me?

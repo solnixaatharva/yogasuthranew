@@ -12,7 +12,7 @@ const ContactUs = () => {
     return (
         <div className="max-w-7xl mx-auto">
             <div >
-                <h1  data-aos="flip-up" className="text-4xl font-extrabold text-center my-8 text-[#DC2C5C]">CONTACT</h1>
+                <h1  data-aos="flip-up" className="text-4xl font-extrabold text-center my-8 text-brand">CONTACT</h1>
                 <div>
                     <h1 className="text-center text-xl font-medium text-base py-10">Map is Loading..</h1>
                 </div>
@@ -57,7 +57,7 @@ const ContactUs = () => {
                         </div>
                     </form>
                     <div className="form-control mb-6 flex  items-center">
-                        <button className="btn w-32 rounded-full bg-[#DC2C5C] text-white hover:text-black">Send</button>
+                        <button className="btn w-32 rounded-full bg-brand text-white hover:text-black">Send</button>
                     </div>
                 </div>
 

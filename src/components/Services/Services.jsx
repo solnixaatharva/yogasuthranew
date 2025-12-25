@@ -22,7 +22,7 @@ const Services = () => {
     <div data-aos="fade-up" className="max-w-7xl mx-auto px-4">
       <div className="my-10 text-center">
         <div className="flex justify-center">
-          <img src={'https://i.ibb.co/GVYkfDx/Screenshot-2023-10-07-041440.png'} alt="decor" />
+          <img src={'public/images/logoyogasuthra.png'} alt="decor" />
         </div>
         <h1 className="text-4xl font-bold">OUR SERVICES</h1>
         <p className="text-lg text-gray-500 mt-5">

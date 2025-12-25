@@ -26,7 +26,7 @@ const Shop = () => {
 
     return (
         <div className="max-w-7xl mx-auto my-8">
-            <h1  data-aos="flip-up" className="text-4xl font-extrabold text-center my-8 text-[#DC2C5C]">SHOP</h1>
+            <h1  data-aos="flip-up" className="text-4xl font-extrabold text-center my-8 text-brand">SHOP</h1>
             <div  data-aos="zoom-in" className="grid grid-cols-1 md:grid-cols-4 gap-4 px-4">
                 {
                     products.map((product) => (
