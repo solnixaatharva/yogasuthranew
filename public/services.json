@@ -3,35 +3,35 @@
         "id": 1,
         "title": "hata yoga",
         "dsc": "This title emphasizes the idea of achieving holistic health and radiance through the practice of yoga",
-        "img": "https://i.ibb.co/fdPxC771/hata.jpg",
+        "img": "public/images/hata.jpg",
         "long_dsc": "yoga"
     },
     {
         "id": 2,
         "title": "yin yoga",
         "dsc":"TSome people hate going to workshops. Done wrong, they can be a huge waste of time and money",
-        "img": "https://i.ibb.co/213tKJxc/yin-yoga-2.jpg",
+        "img": "public/images/yin yoga 2.jpg",
         "long_dsc": "Managing a yoga festival involves a combination of logistical, organizational, and promotional tasks. Whether you're planning a small local yoga festival or a larger-scale event, here's a step-by-step guide to help you with yoga festival management:"
     },
     {
         "id": 3,
         "title": "Yoga restorative ",
         "dsc": "Planning a yoga retreat requires attention to detail, excellent organization, and a deep understanding ",
-        "img": "https://i.ibb.co/PvQN3h6n/yogarestorative.jpg",
+        "img": "public/images/yogarestorative.jpg",
         "long_dsc": "Planning a yoga retreat requires attention to detail, excellent organization, and a deep understanding of the needs and desires of your target audience. With careful planning and execution, you can create a transformative and memorable experience for your retreat participants."
     },
     {
         "id": 4,
         "title": "Yoga kundalini",
         "dsc": "This title emphasizes the idea of achieving holistic health and radiance through the practice of yoga",
-        "img": "https://i.ibb.co/TD33KPdm/yoga-kundalini-2.jpg",
+        "img": "public/images/yoga kundalini 2.jpg",
         "long_dsc": "This title emphasizes the idea of achieving holistic health and radiance through the practice of yoga, which aligns with the wellness aspects of yoga. Feel free to adapt it to suit the specific focus and goals of your program."
     },
     {
         "id": 5,
         "title": "yoga postioning",
         "dsc": "TSome people hate going to workshops. Done wrong, they can be a huge waste of time and money",
-        "img": "https://i.ibb.co/sdVVKvkD/yoga-conditioning.jpg",
+        "img": "public/images/yoga conditioning.jpg",
         "long_dsc": "TSome people hate going to workshops. Done wrong, they can be a huge waste of time and money. However, if they're planned well, they can be incredibly valuable for everyone involved. Workshops are great for brainstorming, interactive learning, building relationships, and problem-solving. This is why advance planning is critical."
     },
     {

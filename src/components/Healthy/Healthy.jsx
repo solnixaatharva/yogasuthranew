@@ -13,7 +13,7 @@ const Healthy = () => {
                 <div>
                     <div data-aos="fade-up"  className="mt-20 text-center ">
                         <div className="flex justify-center">
-                            <img className="" src={'https://i.ibb.co/GVYkfDx/Screenshot-2023-10-07-041440.png'} alt="" />
+                            <img className ="h-20" src={'public/images/logoyogasuthra.png'} alt="YogaSuthra logo" />
                         </div>
                         <h1 className="text-4xl font-bold">LIVE HEALTHY LIFE</h1>
                         <p className="text-lg text-gray-500 mt-5">Yoga can be a wonderful perk to add to your event. And it requires only a small <br /> investment: the fee for one instructor, and setting aside a nice space. If you can, go and attend a class with the instructor you hire</p>
