@@ -27,7 +27,7 @@ const Navbar = () => {
         isPending
             ? "pending"
             : isActive
-            ? "px-3 py-2 rounded-full font-bold text-neutral-900 bg-white/95 shadow-md border border-neutral-200 ring-1 ring-neutral-200"
+            ? "px-3 py-2 rounded-full font-bold text-neutral-900"
             : "px-3 py-2 text-neutral-800";
 
     const home = <NavLink to="/" className={linkClass}>HOME</NavLink>;
@@ -50,8 +50,8 @@ const Navbar = () => {
                     <div className="navbar flex justify-between items-center ">
                         <div className="flex items-center py-2 relative">
 
-                            <div className="bg-[#efe6d0] px-2 py-1 rounded-md z-40">
-                                <img className="w-[200px] object-contain bg-transparent" src={'public/images/logoyogasuthra.png'} alt="YogaSuthra logo" />
+                            <div className="p-0 z-40 bg-transparent">
+                                <img className="w-[120px] md:w-[160px] lg:w-[200px] object-contain block" src={'http://yogasuthra.in/images/logo.png'} alt="YogaSuthra logo" />
                             </div>
                         </div>
                         <div className="">
