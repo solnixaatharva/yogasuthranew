@@ -38,7 +38,7 @@
         "id": 6,
         "title": "power yoga",
         "dsc": "Being a yoga teacher requires a lot of self promotion and preparation for classes. Whether you get a ",
-        "img": "https://i.ibb.co/fFc9QRQ/banner3-1060x.webp",
+        "img": "public/images/power yoga.jpg",
         "long_dsc": "Being a yoga teacher requires a lot of self promotion and preparation for classes. Whether you get yourself a regular gig at a yoga studio or go completely free lance you’ll have to self promote your classes, style, skills, and experience. And then once you get in the studio, you’ll have to deliver. Here are my top tech teacher tools to help you be"
     },
     {
@@ -47,13 +47,13 @@
         "dsc": "YOGA",
         "img": "public/images/Vinyasa.jpg",
         "long_dsc": "Vinyasa Flow is a dynamic and fluid style of yoga that synchronizes breath with movement. It involves a series of poses that flow seamlessly from one to the next, creating a continuous and rhythmic practice. Vinyasa Flow is known for its emphasis on creativity, allowing practitioners to explore different sequences and variations while maintaining a focus on breath awareness."
-  }
+    },
    {
         "id": 8,
         "title": "yoga prenatal",
         "dsc": "YOGA",
-        "img": "",
-        "long_dsc": "Vinyasa Flow is a dynamic and fluid style of yoga that synchronizes breath with movement. It involves a series of poses that flow seamlessly from one to the next, creating a continuous and rhythmic practice. Vinyasa Flow is known for its emphasis on creativity, allowing practitioners to explore different sequences and variations while maintaining a focus on breath awareness."
+        "img": "public/images/yoga prenatal.jpg",
+        "long_dsc": "Prenatal yoga is a gentle form of yoga adapted for pregnancy that combines stretching, mental centering, and focused breathing to support both physical comfort and emotional wellbeing during pregnancy."
   }
   
 
