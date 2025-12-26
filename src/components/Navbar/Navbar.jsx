@@ -36,7 +36,7 @@ const Navbar = () => {
     /*const aboutUs = <NavLink to="/aboutus" className={linkClass}>ABOUT US</NavLink>;*/
     const yogasuthra = <NavLink to="/yogasuthra" className={linkClass}>YOGASUTHRA</NavLink>;
     const contactUs = <NavLink to="/contactus" className={linkClass}>CONTACT US</NavLink>;
-    const faq = <NavLink to="/faq" className={linkClass}>FAQ'S</NavLink>;
+    /*const faq = <NavLink to="/faq" className={linkClass}>FAQ'S</NavLink>;*/
 
 
 
@@ -66,7 +66,7 @@ const Navbar = () => {
                                     {/*<li className="text-4xl px-3">{aboutUs}</li>*/}
                                     <li className="text-4xl px-3">{yogasuthra}</li>
                                     <li className="text-4xl px-3">{contactUs}</li>
-                                    <li className="text-4xl px-3 mb-5">{faq}</li>
+                                    {/*<li className="text-4xl px-3 mb-5">{faq}</li>*/}
                                     {
                                         user ? <>
                                             <Link onClick={handelLogout} className=" py-2 px-4 rounded-full font-bold bg-white text-gray-500 md:ml-4 lg:ml-6">
@@ -90,7 +90,7 @@ const Navbar = () => {
                                 {/*<li>{aboutUs}</li>*/}
                                 <li>{yogasuthra}</li>
                                 <li>{contactUs}</li>
-                                <li>{faq}</li>
+                                {/*<li>{faq}</li>*/}
 
                                 {
                                     user ? <>

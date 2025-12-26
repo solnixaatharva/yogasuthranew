@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 /*import AboutUs from "../../Pages/AboutUs/AboutUs";*/
 import Articles from "../../Pages/Blog/Blog";
 import ContactUs from "../../Pages/ContactUs/ContactUs";
-import Faq from "../../Pages/FAQ/Faq";
+/*import Faq from "../../Pages/FAQ/Faq";*/
 import Home from "../../Pages/Home";
 import Shop from "../../Pages/Shop/Shop";
 import Yogasuthra from "../../Pages/Yogasuthra/Yogasuthra";
@@ -48,10 +48,10 @@ const myCreateRoute = createBrowserRouter([
                 path:'/contactus',
                 element:<ContactUs></ContactUs>,
             },
-            {
+            /*{
                 path:'/faq',
                 element:<Faq></Faq>,
-            },
+            },*/
             {
                 path:'/login',
                 element:<Login></Login>,
