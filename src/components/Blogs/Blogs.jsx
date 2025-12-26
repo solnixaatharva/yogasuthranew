@@ -2,6 +2,7 @@ import { AiFillTag } from "react-icons/ai";
 import { BsCalendar2 } from "react-icons/bs";
 import { FaUser } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { articles } from "../../data/articles";
 import Aos from "aos";
 import 'aos/dist/aos.css'
 import { useEffect } from "react";
@@ -17,53 +18,31 @@ const Blogs = () => {
                 <div className="flex justify-center">
                     <img className="" src={'public/images/logoyogasuthra.png'} alt="" />
                 </div>
-                <h1 className="text-4xl font-bold">OUR BLOGS</h1>
-                <p className="text-lg text-gray-500 mt-5"> Our very own Rachel Scott maintains a blog that’s noteworthy for its openness,<br /> humour and lively style. The blog is a window into Rachel’s soul as she explores life through yoga</p>
+                <h1 className="text-4xl font-bold">OUR ARTICLES</h1>
+                <p className="text-lg text-gray-500 mt-5">Curated articles about yogic philosophy, therapies and practices to help you understand Yogasuthra's approach and benefits.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-4">
+                {articles.slice(0,4).map((a, i) => (
+                    <div key={a.slug} data-aos={i % 2 === 0 ? "fade-up-right" : "fade-up-left"} className="bg-base-100 border rounded-lg overflow-hidden">
+                        <div className="p-6">
+                            <div className="flex justify-between items-center text-sm text-neutral-400 mb-3">
+                                <div className="flex items-center gap-2"><BsCalendar2 className="text-accent text-lg" /><span>{a.date}</span></div>
+                                <div className="flex items-center gap-2"><FaUser className="text-[#ED0B5A] text-lg" /><span>Yogasuthra</span></div>
+                            </div>
 
-                <div data-aos="fade-up-right"  className="  bg-base-100 border">
-                    <figure><img src={'https://i.ibb.co/G5tMjK5/blog8.webp'} alt="Shoes" /></figure>
-                    <div className="flex justify-evenly text-sm text-neutral-300 py-4 font-bold items-center">
-                        <h1 className="flex gap-2 items-center">
-                            <BsCalendar2 className="text-accent text-lg"></BsCalendar2>
-                            August 4, 2020</h1>
-                        <h1 className="flex items-center gap-2"><FaUser className="text-[#ED0B5A] text-lg"></FaUser> by </h1>
-                    </div>
-                    <hr />
-                    <div className="card-body">
-                        <h2 className="card-title">
-                            THE SYMBOL FOR ASANAS</h2>
-                        <p className="text-gray-400">If you are looking for information or resources related to specific yoga poses or asanas, it's best to refer to reputable yoga books, websites, or seek guidance from a qualified yoga instructor who can provide you with detailed instructions and demonstrations for each posture.</p>
-                        <p className="py-4 flex gap-2 items-center">
-                            <AiFillTag className="text-accent text-lg"></AiFillTag>
-                            Bony ,Exercise</p>
-                        <button className="hover:bg-[#ED0B5A] bg-white rounded-lg border  w-[100px] py-2 hover:text-white">Read More</button>
-                    </div>
+                            <h2 className="text-xl font-semibold mb-2">{a.title}</h2>
+                            <p className="text-gray-400 mb-4">{a.excerpt}</p>
 
-                </div>
-                <div data-aos="fade-up-left" className="  bg-base-100 border">
-                    <figure><img src={'https://i.ibb.co/Jj5CrBh/blog10.webp'} alt="Shoes" /></figure>
-                    <div className="flex justify-evenly text-sm text-[#9E9E9E] py-4 font-bold items-center">
-                        <h1 className="flex gap-2 items-center">
-                            <BsCalendar2 className="text-accent text-lg"></BsCalendar2>
-                            November 3, 2025</h1>
-                        <h1 className="flex items-center gap-2"><FaUser className="text-[#ED0B5A] text-lg"></FaUser> by </h1>
+                            <div className="flex items-center justify-between">
+                                <p className="py-2 flex gap-2 items-center text-sm text-neutral-500"><AiFillTag className="text-accent text-lg" /> Sapta Yoga</p>
+                                <Link to={`/articles/${a.slug}`} className="hover:bg-[#ED0B5A] bg-white rounded-lg border  w-[100px] py-2 text-center hover:text-white">Read More</Link>
+                            </div>
+                        </div>
                     </div>
-                    <hr />
-                    <div className="card-body">
-                        <h2 className="card-title">GOOD EXERCISE FOR BACK</h2>
-                        <p className="text-gray-400">In yoga, there isn't a universal symbol or logo that represents all asanas (yoga postures). Yoga postures are typically taught and practiced through physical demonstration and verbal guidance rather than through symbols. Each asana has its own name and specific physical alignment.</p>
-                        <p className="py-4 flex gap-2 items-center">
-                            <AiFillTag className="text-accent text-lg"></AiFillTag>
-                            Romman ,Exercise</p>
-                        <button className="hover:bg-[#ED0B5A] bg-white rounded-lg border  w-[100px] py-2 hover:text-white">Read More</button>
-                    </div>
-
-                </div>
+                ))}
             </div>
             <div className="flex justify-center items-center mt-4">
-                <Link to='/blog' className="hover:bg-accent bg-white rounded-lg border px-4 text-center  py-2 hover:text-white">All Blogs</Link>
+                <Link to='/articles' className="hover:bg-accent bg-white rounded-lg border px-4 text-center  py-2 hover:text-white">All Articles</Link>
             </div>
         </div>
     );

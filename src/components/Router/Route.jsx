@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import AboutUs from "../../Pages/AboutUs/AboutUs";
-import Blog from "../../Pages/Blog/Blog";
+import Articles from "../../Pages/Blog/Blog";
 import ContactUs from "../../Pages/ContactUs/ContactUs";
 import Faq from "../../Pages/FAQ/Faq";
 import Home from "../../Pages/Home";
@@ -12,6 +12,7 @@ import Root from "../Root/Root";
 import ServiceDetail from "../ServiceDetail/ServiceDetail";
 import Services from "../Services/Services";
 import PrivateRoute from "./PrivateRoute";
+import ArticleDetail from "../../Pages/Articles/ArticleDetail";
 
 
 const myCreateRoute = createBrowserRouter([
@@ -28,8 +29,12 @@ const myCreateRoute = createBrowserRouter([
                 element:<PrivateRoute><Shop></Shop></PrivateRoute>,
             },
             {
-                path:'/blog',
-                element:<PrivateRoute><Blog></Blog></PrivateRoute>,
+                path:'/articles',
+                element:<Articles></Articles>,
+            },
+            {
+                path:'/articles/:slug',
+                element:<ArticleDetail></ArticleDetail>,
             },
             {
                 path:'/aboutus',
