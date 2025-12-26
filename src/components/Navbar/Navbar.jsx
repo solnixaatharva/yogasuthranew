@@ -43,7 +43,7 @@ const Navbar = () => {
 
 
     return (
-        <div className="relative bg-[#efe6d0] shadow-none">
+        <div className="relative bg-sun shadow-none">
 
             <div className="max-w-screen-xl	 mx-auto md:px-2">
                 <div className="px-4 md:px-4 lg:px-4   bg-none z-30 relative ">
@@ -59,7 +59,7 @@ const Navbar = () => {
                                 <label tabIndex={1} className="btn btn-ghost lg:hidden">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-[50px] text-neutral-800 w-[50px]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                                 </label>
-                                <ul tabIndex={0} className=" menus menu-sm dropdown-content text-neutral-800 py-4 z-[10] rounded-box -left-20 shadow-md" style={{background: '#efe6d0'}}>
+                                <ul tabIndex={0} className=" menus menu-sm dropdown-content text-neutral-800 py-4 z-[10] rounded-box -left-20 shadow-md bg-sun">
                                     <li className="text-4xl px-3">{home}</li>
                                     <li className="text-4xl px-3">{shop}</li>
                                     <li className="text-4xl px-3">{blog}</li>

@@ -48,5 +48,13 @@
         "img": "public/images/Vinyasa.jpg",
         "long_dsc": "Vinyasa Flow is a dynamic and fluid style of yoga that synchronizes breath with movement. It involves a series of poses that flow seamlessly from one to the next, creating a continuous and rhythmic practice. Vinyasa Flow is known for its emphasis on creativity, allowing practitioners to explore different sequences and variations while maintaining a focus on breath awareness."
   }
+   {
+        "id": 8,
+        "title": "yoga prenatal",
+        "dsc": "YOGA",
+        "img": "",
+        "long_dsc": "Vinyasa Flow is a dynamic and fluid style of yoga that synchronizes breath with movement. It involves a series of poses that flow seamlessly from one to the next, creating a continuous and rhythmic practice. Vinyasa Flow is known for its emphasis on creativity, allowing practitioners to explore different sequences and variations while maintaining a focus on breath awareness."
+  }
+  
 
 ]
