@@ -34,7 +34,7 @@ const Navbar = () => {
     const home = <NavLink to="/" className={linkClass}>HOME</NavLink>;
     const shop = <NavLink to="/shop" className={linkClass}>SHOP</NavLink>;
     const blog = <NavLink to="/blog" className={linkClass}>BLOGS</NavLink>;
-    const aboutUs = <NavLink to="/aboutus" className={linkClass}>ABOUT US</NavLink>;
+    /*const aboutUs = <NavLink to="/aboutus" className={linkClass}>ABOUT US</NavLink>;*/
     const yogasuthra = <NavLink to="/yogasuthra" className={linkClass}>YOGASUTHRA</NavLink>;
     const contactUs = <NavLink to="/contactus" className={linkClass}>CONTACT US</NavLink>;
     const faq = <NavLink to="/faq" className={linkClass}>FAQ'S</NavLink>;

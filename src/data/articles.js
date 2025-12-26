@@ -26,7 +26,7 @@ export const articles = [
     title: 'Causes of Disease & Benefits of Yoga',
     date: 'Health',
     excerpt: 'Understand common causes of disease in the traditional system and how yoga-based therapies help restore balance.',
-    image: '',
+    image: 'public/images/The Benefits of Yoga.jpg',
     content: `
       <h3>Causes of disease</h3>
       <p>Disease arises when natural balance is disturbed — due to poor diet, accumulated toxins, stress, and lifestyle choices that conflict with natural rhythms. Restoring balance via diet, cleansing, and therapeutic practices is central to treatment.</p>

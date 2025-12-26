@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import AboutUs from "../../Pages/AboutUs/AboutUs";
+/*import AboutUs from "../../Pages/AboutUs/AboutUs";*/
 import Articles from "../../Pages/Blog/Blog";
 import ContactUs from "../../Pages/ContactUs/ContactUs";
 import Faq from "../../Pages/FAQ/Faq";
@@ -36,10 +36,10 @@ const myCreateRoute = createBrowserRouter([
                 path:'/articles/:slug',
                 element:<ArticleDetail></ArticleDetail>,
             },
-            {
+            /*{
                 path:'/aboutus',
                 element:<AboutUs></AboutUs>,
-            },
+            },*/
             {
                 path:'/yogasuthra',
                 element:<Yogasuthra></Yogasuthra>,

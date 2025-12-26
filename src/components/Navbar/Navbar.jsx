@@ -33,7 +33,7 @@ const Navbar = () => {
     const home = <NavLink to="/" className={linkClass}>HOME</NavLink>;
     const shop = <NavLink to="/shop" className={linkClass}>SHOP</NavLink>;
     const blog = <NavLink to="/articles" className={linkClass}>ARTICLES</NavLink>; 
-    const aboutUs = <NavLink to="/aboutus" className={linkClass}>ABOUT US</NavLink>;
+    /*const aboutUs = <NavLink to="/aboutus" className={linkClass}>ABOUT US</NavLink>;*/
     const yogasuthra = <NavLink to="/yogasuthra" className={linkClass}>YOGASUTHRA</NavLink>;
     const contactUs = <NavLink to="/contactus" className={linkClass}>CONTACT US</NavLink>;
     const faq = <NavLink to="/faq" className={linkClass}>FAQ'S</NavLink>;
@@ -63,7 +63,7 @@ const Navbar = () => {
                                     <li className="text-4xl px-3">{home}</li>
                                     <li className="text-4xl px-3">{shop}</li>
                                     <li className="text-4xl px-3">{blog}</li>
-                                    <li className="text-4xl px-3">{aboutUs}</li>
+                                    {/*<li className="text-4xl px-3">{aboutUs}</li>*/}
                                     <li className="text-4xl px-3">{yogasuthra}</li>
                                     <li className="text-4xl px-3">{contactUs}</li>
                                     <li className="text-4xl px-3 mb-5">{faq}</li>
@@ -87,7 +87,7 @@ const Navbar = () => {
                                 <li className="">{home}</li>
                                 <li className="">{shop}</li>
                                 <li>{blog}</li>
-                                <li>{aboutUs}</li>
+                                {/*<li>{aboutUs}</li>*/}
                                 <li>{yogasuthra}</li>
                                 <li>{contactUs}</li>
                                 <li>{faq}</li>
