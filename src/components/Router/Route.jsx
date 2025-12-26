@@ -11,7 +11,7 @@ import Register from "../Login/Register/Register";
 import Root from "../Root/Root";
 import ServiceDetail from "../ServiceDetail/ServiceDetail";
 import Services from "../Services/Services";
-import PrivateRoute from "./PrivateRoute";
+/*import PrivateRoute from "./PrivateRoute";*/
 import ArticleDetail from "../../Pages/Articles/ArticleDetail";
 
 
@@ -26,7 +26,7 @@ const myCreateRoute = createBrowserRouter([
             },
             {
                 path:'/shop',
-                element:<PrivateRoute><Shop></Shop></PrivateRoute>,
+                element:<Shop></Shop>,
             },
             {
                 path:'/articles',
@@ -67,7 +67,7 @@ const myCreateRoute = createBrowserRouter([
             },
             {
                 path:'/serviceDetail/:id',
-                element:<PrivateRoute><ServiceDetail></ServiceDetail></PrivateRoute> ,
+                element:<ServiceDetail></ServiceDetail> ,
                 loader: () => fetch('/services.json')
             }
         ]
