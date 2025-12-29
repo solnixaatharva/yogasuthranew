@@ -7,7 +7,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "db:push": "drizzle-kit push"
+    "db:push": "drizzle-kit push",
+    "dev": "node index.js",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
+    
   },
   "keywords": [],
   "author": "",
