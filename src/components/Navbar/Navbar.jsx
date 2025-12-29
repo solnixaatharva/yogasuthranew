@@ -32,7 +32,8 @@ const Navbar = () => {
 
     const home = <NavLink to="/" className={linkClass}>HOME</NavLink>;
     const shop = <NavLink to="/shop" className={linkClass}>SHOP</NavLink>;
-    const blog = <NavLink to="/articles" className={linkClass}>ARTICLES</NavLink>;
+    const trainer = <NavLink to="/trainer" className={linkClass}>TRAINER</NavLink>;
+
     /*const aboutUs = <NavLink to="/aboutus" className={linkClass}>ABOUT US</NavLink>;*/
     const yogasuthra = <NavLink to="/yogasuthra" className={linkClass}>YOGASUTHRA</NavLink>;
     const contactUs = <NavLink to="/contactus" className={linkClass}>CONTACT US</NavLink>;
@@ -70,7 +71,8 @@ const Navbar = () => {
                                 <ul tabIndex={0} className=" menus menu-sm dropdown-content text-neutral-800 py-4 z-[10] rounded-box -left-20 shadow-md bg-sun">
                                     <li className="text-4xl px-3">{home}</li>
                                     <li className="text-4xl px-3">{shop}</li>
-                                    <li className="text-4xl px-3">{blog}</li>
+                                    <li className="text-4xl px-3">{trainer}</li>
+
                                     {/*<li className="text-4xl px-3">{aboutUs}</li>*/}
                                     <li className="text-4xl px-3">{yogasuthra}</li>
                                     <li className="text-4xl px-3">{contactUs}</li>
@@ -94,10 +96,10 @@ const Navbar = () => {
                             <ul className=" menu-horizontal flex items-center px-4 gap-8 lg:gap-12  text-neutral-800 font-medium md:font-bold tracking-wide">
                                 <li className="">{home}</li>
                                 <li className="">{shop}</li>
-                                <li>{blog}</li>
+                                <li className="">{trainer}</li>
                                 {/*<li>{aboutUs}</li>*/}
-                                <li>{yogasuthra}</li>
-                                <li>{contactUs}</li>
+                                <li className="">{yogasuthra}</li>
+                                <li className="">{contactUs}</li>
                                 {/*<li>{faq}</li>*/}
 
                                 {
