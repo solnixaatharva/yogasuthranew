@@ -3,7 +3,6 @@ import Banner from "../components/Banner/Banner";
 import Blogs from "../components/Blogs/Blogs";
 import Enhances from "../components/Enhance/Enhances";
 import Welcome from "../components/Home/Welcome";
-import NewsEvents from "../components/Home/NewsEvents";
 import Packages from "../components/Home/Packages";
 import ContactStrip from "../components/Home/ContactStrip";
 import Healthy from "../components/Healthy/Healthy";
