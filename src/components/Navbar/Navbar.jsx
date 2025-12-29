@@ -27,12 +27,12 @@ const Navbar = () => {
         isPending
             ? "pending"
             : isActive
-            ? "px-3 py-2 rounded-full font-bold text-neutral-900"
-            : "px-3 py-2 text-neutral-800";
+                ? "px-3 py-2 rounded-full font-bold text-neutral-900"
+                : "px-3 py-2 text-neutral-800";
 
     const home = <NavLink to="/" className={linkClass}>HOME</NavLink>;
     const shop = <NavLink to="/shop" className={linkClass}>SHOP</NavLink>;
-    const blog = <NavLink to="/articles" className={linkClass}>ARTICLES</NavLink>; 
+    const blog = <NavLink to="/articles" className={linkClass}>ARTICLES</NavLink>;
     /*const aboutUs = <NavLink to="/aboutus" className={linkClass}>ABOUT US</NavLink>;*/
     const yogasuthra = <NavLink to="/yogasuthra" className={linkClass}>YOGASUTHRA</NavLink>;
     const contactUs = <NavLink to="/contactus" className={linkClass}>CONTACT US</NavLink>;
@@ -51,8 +51,16 @@ const Navbar = () => {
                         <div className="flex items-center py-2 relative">
 
                             <div className="p-0 z-40 bg-transparent">
-                                <img className="w-[120px] md:w-[160px] lg:w-[200px] object-contain block" src={'http://yogasuthra.in/images/logo.png'} alt="YogaSuthra logo" />
+                                <div className="w-20 h-20 md:w-22 md:h-22 lg:w-24 lg:h-24 rounded-full overflow-hidden bg-white shadow-sm flex items-center justify-center">
+                                    <img
+                                        className="w-full h-full object-contain p-2"
+                                        src="/images/newyogasuthralogo.jpeg"
+                                        alt="YogaSuthra logo"
+                                    />
+                                </div>
+
                             </div>
+
                         </div>
                         <div className="">
                             <div className="dropdown">

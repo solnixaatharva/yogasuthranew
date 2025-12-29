@@ -19,7 +19,7 @@ const Home = () => {
         <div className="w-[100vw] overflow-x-hidden">
             <Banner></Banner>
             <Welcome></Welcome>
-            <NewsEvents></NewsEvents>
+            {/*<NewsEvents></NewsEvents>*/}
             <Packages></Packages>
             <Healthy></Healthy>
             <Services></Services>
