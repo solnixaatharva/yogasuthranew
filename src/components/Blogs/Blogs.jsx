@@ -9,20 +9,25 @@ import { useEffect } from "react";
 
 
 const Blogs = () => {
-    useEffect(()=>{
-        Aos.init({duration:2000})
-    },[])
+    useEffect(() => {
+        Aos.init({ duration: 2000 })
+    }, [])
     return (
         <div className="max-w-7xl mx-auto" >
-            <div data-aos="zoom-in-down"   className="my-10 text-center  ">
+            <div data-aos="zoom-in-down" className="my-10 text-center  ">
                 <div className="flex justify-center">
-                    <img className="" src={'public/images/logoyogasuthra.png'} alt="" />
+                    <img
+                        src="/images/newyogasuthralogo.jpeg"
+                        alt="decor"
+                        className="w-40 h-auto"
+                    />
                 </div>
+
                 <h1 className="text-4xl font-bold">OUR ARTICLES</h1>
                 <p className="text-lg text-gray-500 mt-5">Curated articles about yogic philosophy, therapies and practices to help you understand Yogasuthra's approach and benefits.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-4">
-                {articles.slice(0,4).map((a, i) => (
+                {articles.slice(0, 4).map((a, i) => (
                     <div key={a.slug} data-aos={i % 2 === 0 ? "fade-up-right" : "fade-up-left"} className="bg-base-100 border rounded-lg overflow-hidden">
                         <div className="p-6">
                             <div className="flex justify-between items-center text-sm text-neutral-400 mb-3">

@@ -22,8 +22,13 @@ const Services = () => {
     <div data-aos="fade-up" className="max-w-7xl mx-auto px-4">
       <div className="my-10 text-center">
         <div className="flex justify-center">
-          <img src={'public/images/logoyogasuthra.png'} alt="decor" />
+          <img
+            src="/images/newyogasuthralogo.jpeg"
+            alt="decor"
+            className="w-40 h-auto"
+          />
         </div>
+
         <h1 className="text-4xl font-bold">OUR SERVICES</h1>
         <p className="text-lg text-gray-500 mt-5">
           Talk to people you know who attend yoga classes regularly. They’ll probably have a <br />

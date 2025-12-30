@@ -4,16 +4,21 @@ import { useEffect } from "react";
 
 
 const Support = () => {
-    useEffect(()=>{
-        Aos.init({duration:2000})
-    },[])
+    useEffect(() => {
+        Aos.init({ duration: 2000 })
+    }, [])
     return (
         <div>
             <div className="max-w-7xl mx-auto px-2 md:px-2 lg:px-0">
                 <div data-aos="zoom-in-down" className="mt-20 text-center  ">
                     <div className="flex justify-center">
-                        <img className="" src={'public/images/logoyogasuthra.png'} alt="" />
+                        <img
+                            src="/images/newyogasuthralogo.jpeg"
+                            alt="decor"
+                            className="w-40 h-auto"
+                        />
                     </div>
+
                     <h1 className="text-4xl font-bold">OUR SUPPORT</h1>
                     <p className="text-lg text-gray-500 mt-5">Yoga is a type of exercise that focuses on strength, flexibility,   breathing and relaxation. <br /> After a single session participants experience benefits like lower blood pressure and improved mood. Yoga is popular <br /> in the United States and can be a nice benefit to offer to your event participants.</p>
                 </div>

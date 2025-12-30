@@ -33,6 +33,7 @@ const Navbar = () => {
     const home = <NavLink to="/" className={linkClass}>HOME</NavLink>;
     const shop = <NavLink to="/shop" className={linkClass}>SHOP</NavLink>;
     const trainer = <NavLink to="/trainer" className={linkClass}>TRAINER</NavLink>;
+    const classes = <NavLink to="/classes" className={linkClass}>CLASSES</NavLink>;
 
     /*const aboutUs = <NavLink to="/aboutus" className={linkClass}>ABOUT US</NavLink>;*/
     const yogasuthra = <NavLink to="/yogasuthra" className={linkClass}>YOGASUTHRA</NavLink>;
@@ -72,6 +73,7 @@ const Navbar = () => {
                                     <li className="text-4xl px-3">{home}</li>
                                     <li className="text-4xl px-3">{shop}</li>
                                     <li className="text-4xl px-3">{trainer}</li>
+                                    <li className="text-4xl px-3">{classes}</li>
 
                                     {/*<li className="text-4xl px-3">{aboutUs}</li>*/}
                                     <li className="text-4xl px-3">{yogasuthra}</li>
@@ -98,6 +100,8 @@ const Navbar = () => {
                                 <li className="">{shop}</li>
                                 <li className="">{trainer}</li>
                                 {/*<li>{aboutUs}</li>*/}
+                                <li className="">{classes}</li>
+
                                 <li className="">{yogasuthra}</li>
                                 <li className="">{contactUs}</li>
                                 {/*<li>{faq}</li>*/}

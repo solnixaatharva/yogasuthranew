@@ -11,6 +11,8 @@ import Register from "../Login/Register/Register";
 import Root from "../Root/Root";
 import ServiceDetail from "../ServiceDetail/ServiceDetail";
 import Services from "../Services/Services";
+import Class from "../../Pages/Classes/Class";
+
 /*import PrivateRoute from "./PrivateRoute";*/
 // REMOVED: import ArticleDetail from "../../Pages/Articles/ArticleDetail";
 
@@ -80,6 +82,11 @@ const myCreateRoute = createBrowserRouter([
         element: <ServiceDetail></ServiceDetail>,
         loader: () => fetch("/services.json"),
       },
+      {
+        path: "/classes",
+        element: <Class></Class>,
+      },
+
     ],
   },
 ]);
