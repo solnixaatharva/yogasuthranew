@@ -3,6 +3,11 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 import ClassCard from "../../components/ClassCard/ClassCard";
+import PackagesSection from "./PackagesSection.jsx";
+
+
+
+
 import { classes as CLASSES } from "../../data/classes";
 
 export default function Class() {
@@ -21,9 +26,13 @@ export default function Class() {
         CLASSES
       </h1>
 
+      {/* Packages like your screenshot */}
+      <PackagesSection />
+
+      {/* Existing classes grid */}
       <div
         data-aos="zoom-in"
-        className="grid grid-cols-1 md:grid-cols-4 gap-4 px-4"
+        className="grid grid-cols-1 md:grid-cols-4 gap-4 px-4 mt-10"
       >
         {classes.map((cls) => (
           <ClassCard key={cls.id} cls={cls} />
