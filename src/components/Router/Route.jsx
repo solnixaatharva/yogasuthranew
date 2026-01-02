@@ -3,6 +3,9 @@ import { createBrowserRouter } from "react-router-dom";
 // REMOVED: import Articles from "../../Pages/Blog/Blog";
 import ContactUs from "../../Pages/ContactUs/ContactUs";
 /*import Faq from "../../Pages/FAQ/Faq";*/
+import ContactPage from "../../Pages/ContactPage/ContactPage";
+
+
 import Home from "../../Pages/Home";
 import Shop from "../../Pages/Shop/Shop";
 import Yogasuthra from "../../Pages/Yogasuthra/Yogasuthra";
@@ -12,11 +15,14 @@ import Root from "../Root/Root";
 import ServiceDetail from "../ServiceDetail/ServiceDetail";
 import Services from "../Services/Services";
 import Class from "../../Pages/Classes/Class";
+import BookingCalendar from "../../Pages/BookingCalendar/BookingCalendar";
 
 /*import PrivateRoute from "./PrivateRoute";*/
 // REMOVED: import ArticleDetail from "../../Pages/Articles/ArticleDetail";
-
 import Trainer from "../../Pages/Trainer/Trainer";
+
+// ✅ NEW: membership page (file name member.jsx)
+import Member from "../../Pages/Member/member";
 
 const myCreateRoute = createBrowserRouter([
   {
@@ -31,23 +37,16 @@ const myCreateRoute = createBrowserRouter([
         path: "/shop",
         element: <Shop></Shop>,
       },
+      {
+        path: "/contact",
+        element: <ContactPage></ContactPage>,
+      },
 
       // ADDED: Trainer
       {
         path: "/trainer",
         element: <Trainer></Trainer>,
       },
-
-      // REMOVED: Articles + ArticleDetail
-      // {
-      //   path: "/articles",
-      //   element: <Articles></Articles>,
-      // },
-      // {
-      //   path: "/articles/:slug",
-      //   element: <ArticleDetail></ArticleDetail>,
-      // },
-
       /*{
         path:'/aboutus',
         element:<AboutUs></AboutUs>,
@@ -86,7 +85,17 @@ const myCreateRoute = createBrowserRouter([
         path: "/classes",
         element: <Class></Class>,
       },
+      {
+        path: "/booking",
+        element: <BookingCalendar></BookingCalendar>,
+      },
 
+
+      // ✅ NEW route for membership
+      {
+        path: "/membership",
+        element: <Member></Member>,
+      },
     ],
   },
 ]);

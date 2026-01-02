@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const PACKAGES = [
   { id: "daily", title: "Daily Package", price: "₹500 / day" },
@@ -6,9 +6,7 @@ const PACKAGES = [
   { id: "monthly", title: "Monthly Package", price: "₹8000 / month" },
 ];
 
-const SERVICES = ["Yoga Classes", "Meditation", "Therapy Yoga", "Pranayama"];
-
-function PackageCard({ title, price, value, onChange }) {
+function PackageCard({ title, price, services, value, onChange }) {
   return (
     <div className="bg-white rounded-2xl shadow-xl px-8 py-8">
       <h3 className="text-xl font-extrabold text-neutral-800">{title}</h3>
@@ -26,9 +24,9 @@ function PackageCard({ title, price, value, onChange }) {
             Select a service...
           </option>
 
-          {SERVICES.map((s) => (
-            <option key={s} value={s}>
-              {s}
+          {services.map((s) => (
+            <option key={s.id} value={s.id}>
+              {s.title}
             </option>
           ))}
         </select>
@@ -38,7 +36,21 @@ function PackageCard({ title, price, value, onChange }) {
 }
 
 export default function PackagesSection() {
-  const [selected, setSelected] = useState({ daily: "", weekly: "", monthly: "" });
+  const [services, setServices] = useState([]);
+
+  // separate dropdown state per package card
+  const [selected, setSelected] = useState({
+    daily: "",
+    weekly: "",
+    monthly: "",
+  });
+
+  useEffect(() => {
+    fetch("/services.json")
+      .then((res) => res.json())
+      .then((data) => setServices(data))
+      .catch((err) => console.error(err));
+  }, []);
 
   return (
     <section className="max-w-7xl mx-auto px-4 mt-10">
@@ -52,6 +64,7 @@ export default function PackagesSection() {
             key={p.id}
             title={p.title}
             price={p.price}
+            services={services}
             value={selected[p.id]}
             onChange={(val) => setSelected((prev) => ({ ...prev, [p.id]: val }))}
           />

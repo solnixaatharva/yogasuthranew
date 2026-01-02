@@ -4,9 +4,7 @@ import "aos/dist/aos.css";
 
 import ClassCard from "../../components/ClassCard/ClassCard";
 import PackagesSection from "./PackagesSection.jsx";
-
-
-
+import Services from "../../components/Services/Services";
 
 import { classes as CLASSES } from "../../data/classes";
 
@@ -28,6 +26,11 @@ export default function Class() {
 
       {/* Packages like your screenshot */}
       <PackagesSection />
+
+      {/* ✅ Services section (same as homepage services) */}
+      <div className="mt-10">
+        <Services />
+      </div>
 
       {/* Existing classes grid */}
       <div

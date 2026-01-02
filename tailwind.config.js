@@ -8,10 +8,10 @@ export default {
     extend: {
       colors: {
         brand: {
-          DEFAULT: "#DC2C5C",
-          dark: "#B21F49",
-          mid: "#FF6BA9",
-          light: "#FFD7E4",
+          DEFAULT: "#FF8B4B",
+          dark: "#D75A1A",
+          mid: "#FF8B4B",
+          light: "#FFBFA3",
         },
 
         // your new orange base (kept as a color token)
