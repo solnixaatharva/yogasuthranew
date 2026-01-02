@@ -23,7 +23,7 @@ const ServiceCard = ({ service }) => {
         </figure>
         <div className="card-body p-4">
           <h2 className="card-title font-bold text-gray-500">{title}</h2>
-          <p className="text-md text-gray-400 font-semibold text-justify">
+          <p className="text-md text-orange-400 font-semibold text-justify">
             {dsc}{" "}
             <Link to={`/serviceDetail/${id}`} className="text-[#ED0B5A] underline font-bold">
               See Details.

@@ -17,7 +17,7 @@ const ServiceDetail = () => {
                 <figure><img className=' h-full' src={img}alt="Album" /></figure>
                 <div className="card-body">
                     <h2 className="card-title text-3xl font-bold text-gray-500">{title}</h2>
-                    <p className='text-lg font-semibold text-gray-400 '>{long_dsc}</p>
+                    <p className='text-lg font-semibold text-orange-400 '>{long_dsc}</p>
                     <div className="card-actions justify-end">
                         <button className="btn border text-white bg-[#FF8B4B]">Feedback</button>
                     </div>
